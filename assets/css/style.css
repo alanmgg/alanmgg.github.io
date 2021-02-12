@@ -13,8 +13,8 @@
     --font-bold: 700;
 
     /* COLORS */
-    --first-color: #E0004D;
-    --first-color-dark: #A60A3D;
+    --first-color: #1D1F2A;
+    --first-color-dark: #101820;
     --first-color-darken: #290F09;
     --text-color: #54423D;
     --first-color-light: #EAE7E6;
@@ -258,7 +258,8 @@ img {
 }
 
 .home__social-link:hover {
-    background-color: var(--first-color-dark);
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
 }
 
 .home__button {
@@ -277,7 +278,8 @@ img {
 }
 
 .button:hover {
-    background-color: var(--first-color-dark);
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
 }
 
 .button__light {
@@ -554,7 +556,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(224, 0, 77, .7);
+    background: rgba(16, 24, 32, .7);
     border-radius: .5rem;
     transition: .3s;
 }
