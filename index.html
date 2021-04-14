@@ -1,344 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Pagina oficial
+	Alan Francisco Mora | @alanmgg
+-->
+<html>
+	<head>
+		<title>Portafolio | Inicio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- FAVICON -->
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    	<link rel="icon" type="image/png" sizes="512x512" href="assets/images/android-chrome-512x512.png">
+    	<link rel="manifest" href="site.webmanifest">
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
 
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+				<!-- Header -->
+					<header id="header">
+						<h1>ALAN FRANCISCO MORA</h1>
+						<p>Programador Junior &nbsp;&bull;&nbsp; Desarrollador Web &nbsp;&bull;&nbsp; Desarrollador de Apps</p>
+						<nav>
+							<ul>
+								<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+								<li><a href="https://www.facebook.com/Alan.Bananas.0" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://alanmgg.github.io/" class="icon solid fa-angle-double-right"><span class="label">Question</span></a></li>
+								<li><a href="https://github.com/alanmgg" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<!-- <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+							</ul>
+						</nav>
+					</header>
 
-  <!-- GLIDEJS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; AFMG. All rights reserved. Design: <a href="https://github.com/alanmgg">Alan Francisco Mora</a>.</span>
+					</footer>
 
-  <!-- STYLESHEET -->
-  <link rel="stylesheet" href="css/styles.css" />
+			</div>
+		</div>
 
-  <title>Portafolio</title>
-</head>
-
-<body>
-
-  <!-- HEADER -->
-  <header id="home" class="header">
-
-    <!-- NAVIGATION -->
-    <nav class="nav">
-      <div class="navigation container">
-        <div class="logo">
-          <h1>Alan Mora<span>.</span></h1>
-        </div>
-
-        <div class="menu">
-          <div class="top-nav">
-            <div class="logo">
-              <h1>Alan Mora<span>.</span></h1>
-            </div>
-            <div class="close">
-              <i class="fas fa-times"></i>
-            </div>
-          </div>
-
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#home" class="nav-link scroll-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link scroll-link">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link scroll-link">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link scroll-link">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a href="#teams" class="nav-link scroll-link">Trabajos</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link scroll-link">Contacto</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </nav>
-
-    <!-- HERO -->
-    <div class="hero">
-      <h3>Hola, mi nombre es</h3>
-      <h1>Alan Francisco Mora</h1>
-      <h4>Y soy <span id="type1"></span></h4>
-      <a href="#contact">Contrátame</a>
-    </div>
-
-    <img class="banner" src="./images/background.png" alt="" />
-
-    <div class="icons">
-      <span><i class="fab fa-facebook-f"></i></span>
-      <span><i class="fab fa-instagram"></i></span>
-      <span><i class="fab fa-twitter"></i></span>
-      <span><i class="fab fa-github"></i></span>
-    </div>
-  </header>
-
-  <!-- MAIN -->
-  <section class="section about" id="about">
-    <div class="title">
-      <h1>Acerca de mi</h1>
-    </div>
-
-    <div class="about-center container">
-      <div class="left" data-aos="fade-right" data-aos-duration="2000">
-        <img src="./images/about.png" alt="" />
-      </div>
-      <div class="right" data-aos="fade-left" data-aos-duration="2000">
-        <h1>Soy <span id="type2"></span></h1>
-        <p>
-          ¡Hola! Soy Alan, un desarrollador joven pero experimentado, un entusiasta de HTML y CSS, un tipo un poco
-          obsesionado con la calidad del código. También soy co-fundador de OrangeCorp, un proyecto empresarial creado
-          con amigos. Actualmente quiero desarrollarme dentro de una empresa y crecer, aportando mis conocimientos y
-          ganando experiencia para escalar posiciones dentro de ella. Trabajo con lenguajes de programación tales como Java, 
-          JavaScript, PHP, C, C++, Python, entre otros. Si tienes un proyecto que quieres iniciar o crees
-          que necesitas mi ayuda con algo, ponte en contacto.
-        </p>
-        <a href="https://github.com/alanmgg/alanmgg.github.io/blob/main/Curriculum-Vitae.pdf" class="btn">Descarga CV</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="section theme" id="services">
-    <div class="title">
-      <h1>Mis servicios</h1>
-    </div>
-
-    <div class="services-center container">
-      <div class="service" data-aos="fade-down" data-aos-duration="2000">
-        <span><i class="fab fa-accusoft"></i></span>
-        <h2>Diseñador Web</h2>
-        <p>
-          Me considero un desarrollador Full Stack, manejo consultas a bases de
-          datos MySQL, aparte de hacerlo en un entorno amigable para el usuario.
-        </p>
-      </div>
-
-      <div class="service" data-aos="fade-up" data-aos-duration="2000">
-        <span><i class="fas fa-pencil-ruler"></i></span>
-        <h2>Diseñador gráfico</h2>
-        <p>
-          En el bachillerato tome un curso técnico durante año sobre diseño gráfico,
-          entregando como proyecto final una marca y logotipo inventados por mi.
-        </p>
-      </div>
-
-      <div class="service" data-aos="fade-down" data-aos-duration="2000">
-        <span><i class="fas fa-blender-phone"></i></span>
-        <h2>Diseñador de aplicaciones</h2>
-        <p>
-          Dentro de la Facultad de Ingeniería de la UNAM, tome un curso de
-          desarrollo de aplicaciones IOS con Swift y el IDE Xcode.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section skills" id="skills">
-    <div class="title">
-      <h1>Mis habilidades</h1>
-    </div>
-
-    <div class="skills-center container">
-      <div class="skills-left" data-aos="fade-right" data-aos-duration="2000">
-        <div class="skills-box">
-          <h4>HTML5, CSS</h4>
-          <div class="skills-ilt">
-            <div class="skills-bar html"></div>
-            <span>85%</span>
-          </div>
-        </div>
-        <div class="skills-box">
-          <h4>C, C++</h4>
-          <div class="skills-ilt">
-            <div class="skills-bar css"></div>
-            <span>85%</span>
-          </div>
-        </div>
-        <div class="skills-box">
-          <h4>JavaScript, Java</h4>
-          <div class="skills-ilt">
-            <div class="skills-bar javascript"></div>
-            <span>80%</span>
-          </div>
-        </div>
-        <div class="skills-box">
-          <h4>Python</h4>
-          <div class="skills-ilt">
-            <div class="skills-bar python"></div>
-            <span>75%</span>
-          </div>
-        </div>
-
-        <div class="skills-box">
-          <h4>Angular</h4>
-          <div class="skills-ilt">
-            <div class="skills-bar angular"></div>
-            <span>70%</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="right" data-aos="fade-left" data-aos-duration="2000">
-        <h3>Mis habilidades creativas y experiencia</h3>
-        <p>
-          Domino Adobe Photoshop, Adobe After Effects y Sony Vegas Pro para
-          la producción de video. Además de conocer funciones básicas de Corel
-          Drawn en la elaboración de logotipos y marcas.
-        </p>
-        <a href="#" class="btn">Leer más</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WORKS -->
-  <section class="section theme" id="teams">
-    <div class="title">
-      <h1>Mis trabajos</h1>
-    </div>
-
-    <div class="teams-center container">
-      <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-
-            <li class="glide__slide">
-              <div class="team">
-                <div class="img-cover">
-                  <a href="https://alanmgg.github.io/ghm/"><img src="./images/work1.jpg" alt="" /></a>
-                </div>
-                <h3>Grupo Hospitalario de México</h3>
-                <p>
-                  Sistema de gestión de pacientes con Covid-19
-                  dentro del GHM.
-                </p>
-              </div>
-            </li>
-
-            <li class="glide__slide">
-              <div class="team">
-                <div class="img-cover">
-                  <a href="https://alanmgg.github.io/planetaGirando/"><img src="./images/work2.jpg" alt="" /></a>
-                </div>
-                <h3>Planeta Tierra girando</h3>
-                <p>
-                  Animación hecha con puro código en HTML y CSS.
-                </p>
-              </div>
-            </li>
-
-            <li class="glide__slide">
-              <div class="team">
-                <div class="img-cover">
-                  <a href="#"><img src="./images/work5.jpg" alt="" /></a>
-                </div>
-                <h3>Login y Signup responsivos</h3>
-                <p>
-                  Plantilla de un login y un signup con HTML, CSS
-                  y JavaScript
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <div class="title">
-      <h1>Contactame</h1>
-    </div>
-
-    <div class="contact-center container">
-      <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
-        <h2>Ponte en contacto conmigo</h2>
-        <p>
-          Si te interesa contar conmigo dentro de tu empresa o tu proyecto
-          de software, puedes mandarme correo y yo me contactaré contigo lo antes
-          posible.
-        </p>
-        <div>
-          <span class="icon"><i class="fas fa-user"></i></span>
-          <span class="content">
-            <h3>Nombre</h3>
-            <span>Alan Francisco Mora González</span>
-          </span>
-        </div>
-
-        <div>
-          <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-          <span class="content">
-            <h3>Ubicación</h3>
-            <span>Ciudad de México</span>
-          </span>
-        </div>
-
-        <div>
-          <span class="icon"><i class="fas fa-envelope"></i></span>
-          <span class="content">
-            <h3>Correo</h3>
-            <span>afmg.unam@gmail.com</span>
-          </span>
-        </div>
-      </div>
-      <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
-        <form class="form">
-          <h2>Mandame mensaje</h2>
-          <div>
-            <input type="text" placeholder="Nombre" />
-            <input type="email" placeholder="Correo" />
-          </div>
-          <input type="text" placeholder="Asunto" />
-          <textarea cols="10" rows="10" placeholder="Describe tu proyecto"></textarea>
-
-          <a href="#" class="btn">Enviar</a>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Created by <span>Alan Mora</span> | &copy; 2021 All rights reserved.</p>
-  </footer>
-
-  <!-- AOS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-  <!-- TYPEIT -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
-
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
-  <!-- GLIDEJS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
-
-  <!-- SCRIPT -->
-  <script src="js/index.js"></script>
-
-</body>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 
 </html>
